@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marcel Alemany Blasco's personal portfolio. Explore academic projects in web development, programming and control systems.">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>Marcel Alemany Blasco — Personal Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <style>
+    /* Portrait replacing the introductory process illustration. */
+    .hero-profile {
+      align-self: center;
+      justify-self: end;
+      width: 100%;
+      max-width: 280px;
+      margin: 18px 0 0;
+    }
+    .hero-profile img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border: 1px solid var(--line, #d8dbd1);
+      border-radius: 12px;
+    }
+    .more-about-section {
+      padding-block: 60px 70px;
+      border-top: 1px solid var(--line, #d8dbd1);
+    }
+    @media (max-width: 760px) {
+      .hero-profile {
+        justify-self: start;
+        max-width: 320px;
+        margin-top: 35px;
+      }
+      .more-about-section { padding-block: 42px; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="#top" aria-label="Marcel Alemany Blasco, home">marcel<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="header-link" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="hero-intro"><span class="monogram" aria-hidden="true">MA</span><span class="status"><span aria-hidden="true"></span>Learning by building</span></div>
+        <p class="eyebrow">MARCEL ALEMANY BLASCO</p>
+        <h1 id="hero-title">Hi, I'm Marcel.<br>I build to <span>understand.</span></h1>
+        <p class="hero-description">A student at the <strong>Universitat de Girona</strong>, exploring the space between code, thoughtful interfaces and the way systems work.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">View selected work <span aria-hidden="true">↘</span></a><a class="text-link" href="#about">A little about me <span aria-hidden="true">→</span></a></div>
+      </div>
+      <figure class="hero-profile">
+        <img src="assets/maperfil.jpeg" alt="Portrait of Marcel Alemany Blasco" width="560" height="700" decoding="async">
+      </figure>
+      <div class="hero-bottom"><p>PROGRAMMING <span aria-hidden="true">/</span> WEB DESIGN <span aria-hidden="true">/</span> SYSTEMS</p><a href="#work">Scroll to explore <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="work-section container" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">IDEAS PUT INTO PRACTICE</p><h2 id="work-title">Selected <span>work.</span></h2></div><p class="section-intro">A few academic projects.<br>Different problems. Something learned from each.</p></div>
+
+      <article class="project" aria-labelledby="project-web-title">
+        <div class="project-image project-image-web"><img src="assets/project-web.svg" alt="Original illustration of a light personal portfolio website with a project section" width="800" height="540"></div>
+        <div class="project-copy">
+          <p class="project-category"><span>01</span> WEB DEVELOPMENT</p>
+          <h3 id="project-web-title">A personal space<br>on the web.</h3>
+          <p>A portfolio that introduces who I am through what I make. Built around clear navigation, readable content and room for the work to speak.</p>
+          <ul class="tags" aria-label="Web project technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li></ul>
+          <details><summary>Read project notes <span class="sr-only">for A personal space on the web</span><span aria-hidden="true">+</span></summary><div class="project-notes"><p><strong>The idea.</strong> Present a student profile as a website with a clear story: introduction, selected work, practical skills and a personal narrative.</p><p><strong>The implementation.</strong> Semantic HTML provides the structure. CSS Grid and Flexbox create the layout, and media queries adapt it to smaller screens. Native disclosure elements keep these notes available without JavaScript.</p><p><strong>What I practised.</strong> Information architecture, visual hierarchy, responsive layouts and checking the relationship between design and implementation. This is the website you are browsing.</p></div></details>
+        </div>
+      </article>
+
+      <article class="project" aria-labelledby="project-tree-title">
+        <div class="project-image project-image-tree"><img src="assets/project-tree.svg" alt="Original illustration of a binary tree and the order of a postorder traversal" width="800" height="540" loading="lazy"></div>
+        <div class="project-copy">
+          <p class="project-category"><span>02</span> PROGRAMMING &amp; DATA STRUCTURES</p>
+          <h3 id="project-tree-title">Making trees<br>make sense.</h3>
+          <p>Exploring how a simple set of linked nodes becomes a structure that can be built, visited and understood through recursion.</p>
+          <ul class="tags" aria-label="Binary tree project topics"><li>C++</li><li>Recursion</li><li>Data structures</li></ul>
+          <details><summary>Read project notes <span class="sr-only">for Making trees make sense</span><span aria-hidden="true">+</span></summary><div class="project-notes"><p><strong>The exercise.</strong> Build a binary tree of characters from a preorder representation, then produce its postorder traversal.</p><p><strong>The approach.</strong> Break the problem into a node and its two subtrees. Apply the same logic recursively and keep the representation in memory connected to the traversal rules.</p><p><strong>What I practised.</strong> Pointers, constructors, nodes and recursive thinking. The preview is an explanatory illustration, not a screenshot of a separate application.</p></div></details>
+        </div>
+      </article>
+
+      <article class="project" aria-labelledby="project-system-title">
+        <div class="project-image project-image-system"><img src="assets/project-systems.svg" alt="Illustrative chart comparing two example response curves, with no experimental data" width="800" height="540" loading="lazy"></div>
+        <div class="project-copy">
+          <p class="project-category"><span>03</span> MODELLING &amp; SIMULATION</p>
+          <h3 id="project-system-title">From a model<br>to a response.</h3>
+          <p>Using mathematical models and simulation to explore how systems change over time, and why stability matters.</p>
+          <ul class="tags" aria-label="Control systems project tools"><li>MATLAB</li><li>Simulink</li><li>Control systems</li></ul>
+          <details><summary>Read project notes <span class="sr-only">for From a model to a response</span><span aria-hidden="true">+</span></summary><div class="project-notes"><p><strong>The study.</strong> Analyse transfer functions, basic input responses and the stability of control systems through academic exercises.</p><p><strong>The approach.</strong> Connect equations, poles and block diagrams to the behaviour shown in a simulation.</p><p><strong>What I practised.</strong> Modelling, interpreting plots and documenting technical reasoning. The preview curves are schematic illustrations and do not represent measured or submitted results.</p></div></details>
+        </div>
+      </article>
+    </section>
+
+    <section class="skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">TOOLS WITH A PURPOSE</p><h2 id="skills-title">What I work <span>with.</span></h2></div><p class="section-intro">Skills developed through coursework<br>and practical exercises.</p></div>
+        <div class="skills-grid">
+          <article class="skill-group"><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span><h3>Building for the web</h3><p>Organising content and shaping interfaces that work across different screen sizes.</p><ul class="tool-list"><li>HTML &amp; CSS</li><li>JavaScript</li><li>Figma</li></ul></article>
+          <article class="skill-group"><span class="skill-icon" aria-hidden="true">{ }</span><h3>Thinking in structures</h3><p>Breaking problems down and understanding how data and algorithms fit together.</p><ul class="tool-list"><li>C++</li><li>Recursion</li><li>Data structures</li></ul></article>
+          <article class="skill-group"><span class="skill-icon" aria-hidden="true">~</span><h3>Understanding systems</h3><p>Connecting mathematical models to simulations and explaining the resulting behaviour.</p><ul class="tool-list"><li>MATLAB</li><li>Simulink</li><li>Technical documentation</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section container" id="about" aria-labelledby="about-title">
+      <div class="about-intro"><p class="eyebrow">A LITTLE CONTEXT</p><h2 id="about-title">More than<br>a list of <span>tools.</span></h2><p class="about-signature">Marcel Alemany Blasco</p></div>
+      <div class="about-copy"><p>I'm Marcel, a student at the Universitat de Girona. My academic work brings together <strong>programming, web design and control systems</strong>: different ways of asking how something works, and how to make it clearer.</p><p>I enjoy moving between the logic behind a solution and the way someone experiences it. Building a website, tracing a recursive function or interpreting a system response all start with the same thing: taking the time to understand the problem.</p><p>This portfolio is a collection of that learning process. It shows what I've been working on and the ideas behind each project.</p><div class="learning-note"><span class="note-label">CURRENT FOCUS</span><p>Learning through university projects.<br>Building, testing and explaining the result.</p></div></div>
+    </section>
+
+	<section class="about-section container more-about-section" id="more-about-me" aria-labelledby="more-about-title">
+      <div class="about-intro">
+        <p class="eyebrow">BEYOND THE PROJECTS</p>
+        <h2 id="more-about-title">More about <span>me</span></h2>
+      </div>
+      <div class="about-copy">
+        <p>I'm a young <strong>Computer Engineering (GEINF) student</strong> at the <strong>Universitat de Girona</strong>.</p>
+        <p>I hold an <strong>Advanced English certificate</strong>.</p>
+        <p>In my free time, I volunteer with the <strong>Scout movement</strong>.</p>
+      </div>
+    </section>
+
+    <section class="approach-section container" aria-labelledby="approach-title">
+      <div class="approach-heading"><p class="eyebrow">HOW I APPROACH A PROJECT</p><h2 id="approach-title">Understand. Build. <span>Improve.</span></h2></div>
+      <ol class="approach-list"><li><span class="step-number" aria-hidden="true">01</span><h3>Ask the right questions.</h3><p>Understand the goal, the constraints and the person who will use the result.</p></li><li><span class="step-number" aria-hidden="true">02</span><h3>Make the idea tangible.</h3><p>Turn an initial outline into something that can be explored and checked.</p></li><li><span class="step-number" aria-hidden="true">03</span><h3>Learn from the result.</h3><p>Find what can work better, refine the solution and document the decisions.</p></li></ol>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><div class="footer-top"><div><p class="eyebrow">THERE'S ALWAYS ANOTHER QUESTION</p><h2>The next idea starts<br>with <span>curiosity.</span></h2></div><a class="button button-outline" href="#work">Back to the work <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><p>© 2026 Marcel Alemany Blasco</p><div><button class="share-link" type="button" data-share hidden>Share this portfolio <span aria-hidden="true">↗</span></button><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></div><p class="share-status" role="status" aria-live="polite"></p></div>
+  </footer>
+</body>
+</html>
